@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La Pause d'Angel — Bar à burgers à Haucourt-Moulaine</title>
+<meta name="description" content="La Pause d'Angel, bar à burgers à Haucourt-Moulaine : burgers maison et généreux, produits locaux, bœuf du Luxembourg. Sur place ou à emporter, près de la RN52.">
+<meta name="theme-color" content="#12100e">
+<!-- À ADAPTER : adresse réelle du site (celle indiquée dans la bio Instagram) -->
+<link rel="canonical" href="https://lapause-dangel.fr/">
+
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<!-- Open Graph : image de partage = burger -->
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="La Pause d'Angel">
+<meta property="og:title" content="La Pause d'Angel — Bar à burgers à Haucourt-Moulaine">
+<meta property="og:description" content="Du généreux. Du gourmand. Du fait maison. Burgers maison, produits locaux, bœuf du Luxembourg.">
+<meta property="og:url" content="https://lapause-dangel.fr/">
+<meta property="og:image" content="https://lapause-dangel.fr/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/photos/classic.webp" fetchpriority="high">
+<link rel="stylesheet" href="styles.css">
+
+<!-- SEO local : schema.org Restaurant (le menu est ajouté automatiquement depuis data/menu.js) -->
+<script type="application/ld+json" id="ld-restaurant">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "@id": "#restaurant",
+  "name": "La Pause d'Angel",
+  "alternateName": "La Pause d'Angel — Bar à burgers",
+  "description": "Bar à burgers indépendant à Haucourt-Moulaine. Burgers maison et généreux, produits locaux, bœuf du Luxembourg. Sur place ou à emporter.",
+  "image": "https://lapause-dangel.fr/assets/og-image.jpg",
+  "logo": "https://lapause-dangel.fr/assets/logo.png",
+  "url": "https://lapause-dangel.fr/",
+  "servesCuisine": ["Burgers"],
+  "telephone": "+33788042546",
+  "sameAs": ["https://instagram.com/lapausedangel"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "15 Rue Victor Hugo",
+    "postalCode": "54860",
+    "addressLocality": "Haucourt-Moulaine",
+    "addressRegion": "Lorraine",
+    "addressCountry": "FR"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday"], "opens": "11:00", "closes": "14:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday"], "opens": "18:00", "closes": "21:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday","Sunday"], "opens": "11:00", "closes": "14:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday","Sunday"], "opens": "18:00", "closes": "22:00" }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<!-- ============ Icônes (sprite SVG, trait doré) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-beef" viewBox="0 0 24 24"><path d="M3.5 4.5c0 3 1.5 4.3 4 4.8M20.5 4.5c0 3-1.5 4.3-4 4.8"/><path d="M7.5 9.3C8 7.8 10 7.2 12 7.2s4 .6 4.5 2.1c.5 2-.5 5.2-1.5 7.2-.6 1.3-1.7 2.5-3 2.5s-2.4-1.2-3-2.5c-1-2-2-5.2-1.5-7.2z"/><path d="M10.3 17.2h.01M13.7 17.2h.01"/></symbol>
+    <symbol id="i-sauce" viewBox="0 0 24 24"><path d="M4 13h16c0 3.6-3.6 6-8 6s-8-2.4-8-6z"/><path d="M12 3.5c1.5 1.8 2.3 3 2.3 4.2a2.3 2.3 0 0 1-4.6 0c0-1.2.8-2.4 2.3-4.2z"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19C5 10 10 5 19 5c0 9-5 14-14 14z"/><path d="M5 19L14 10"/></symbol>
+    <symbol id="i-tomato" viewBox="0 0 24 24"><circle cx="12" cy="13.5" r="7"/><path d="M12 6.5c-1.5-2-3-2.5-4-2M12 6.5c1.5-2 3-2.5 4-2M12 6.5V3.5"/></symbol>
+    <symbol id="i-pickle" viewBox="0 0 24 24"><rect x="2.5" y="9" width="19" height="7" rx="3.5" transform="rotate(-35 12 12.5)"/><path d="M9 11.5h.01M12.5 13.5h.01M15 10.5h.01M11 9.5h.01"/></symbol>
+    <symbol id="i-onion" viewBox="0 0 24 24"><path d="M12 3c0 2-.5 3-1.5 4C7 9.5 5 12 5 14.5 5 18.5 8 21 12 21s7-2.5 7-6.5c0-2.5-2-5-5.5-7.5C12.5 6 12 5 12 3z"/><path d="M12 8c-2 3-3 6-3 12M12 8c2 3 3 6 3 12"/></symbol>
+    <symbol id="i-cheese" viewBox="0 0 24 24"><path d="M3 17.5v-7L21 6.5v11H3z"/><path d="M3 10.5l18 3"/><circle cx="8" cy="15.2" r="1.1"/><circle cx="14" cy="16" r="1.1"/><circle cx="17.5" cy="9.5" r=".9"/></symbol>
+    <symbol id="i-chicken" viewBox="0 0 24 24"><ellipse cx="9.5" cy="9.5" rx="6.2" ry="5" transform="rotate(-45 9.5 9.5)"/><path d="M13.8 13.8l5.2 5.2"/><path d="M19.2 16.8a2.2 2.2 0 1 1 2.2 2.2"/><path d="M16.8 19.2a2.2 2.2 0 1 0 2.2 2.2"/></symbol>
+    <symbol id="i-bacon" viewBox="0 0 24 24"><path d="M3 7c3-2.5 6 2.5 9 0s6 2.5 9 0v7c-3 2.5-6-2.5-9 0s-6 2.5-9 0z"/><path d="M3 10.5c3-2.5 6 2.5 9 0s6 2.5 9 0"/></symbol>
+    <symbol id="i-potato" viewBox="0 0 24 24"><path d="M5 12c0-4 3-7 7-7 5 0 8 3 7 8-1 4.5-4 6.5-8 6.5-4 0-6-3-6-7.5z"/><path d="M9 10h.01M14 9h.01M12 14h.01M16.5 13h.01M8.5 14.5h.01"/></symbol>
+    <symbol id="i-egg" viewBox="0 0 24 24"><path d="M5 12c-1-4 2-7 5-7 2 0 3 1 5 1 3 0 5 2 5 5.5s-3 6.5-6.5 6.5S6 18.5 5 12z"/><circle cx="12.5" cy="12" r="3.2"/></symbol>
+    <symbol id="i-honey" viewBox="0 0 24 24"><path d="M12 3c3.5 4 6 7 6 10.5a6 6 0 0 1-12 0C6 10 8.5 7 12 3z"/><path d="M9.5 14a2.8 2.8 0 0 0 2.5 2.5"/></symbol>
+    <symbol id="i-ring" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.8"/></symbol>
+    <symbol id="i-veggie" viewBox="0 0 24 24"><path d="M8 7c-2 1-3 4-3 7 0 4 2 6 4 6 1 0 2-.7 3-.7s2 .7 3 .7c2 0 4-2 4-6 0-3-1-6-3-7-1 0-2 .5-4 .5S9 7 8 7z"/><path d="M12 7.5V4c.5-1 1.5-1.5 2.5-1.5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><path d="M4 11l16-7-7 16-2-7z"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.2 6.8h.01"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  </defs>
+</svg>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><i class="cursor-dot"></i><i class="cursor-ring"></i></div>
+
+<!-- ============ HEADER ============ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#accueil" aria-label="La Pause d'Angel — accueil">
+    <img src="assets/logo.png" alt="" width="46" height="46">
+    <span class="brand-txt"><b>LA PAUSE D'ANGEL</b><small>BAR À BURGERS</small></span>
+  </a>
+  <nav id="mainnav" aria-label="Navigation principale">
+    <ul>
+      <li><a href="#burgers">Burgers</a></li>
+      <li><a href="#enfant" data-tab="enfant">Menu enfant</a></li>
+      <li><a href="#accompagnements" data-tab="accompagnements">Accompagnements</a></li>
+      <li><a href="#boissons" data-tab="boissons">Boissons</a></li>
+      <li><a href="#infos">Infos</a></li>
+    </ul>
+  </nav>
+  <a class="btn btn-call" href="tel:+33788042546"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span>Appeler</span></a>
+  <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainnav" aria-label="Ouvrir le menu"><i></i><i></i></button>
+</header>
+
+<main id="contenu">
+
+<!-- ============ 1. HERO ============ -->
+<section class="hero" id="accueil" aria-label="Bienvenue">
+  <div class="hero-media">
+    <img class="hero-blur" src="assets/photos/classic.webp" alt="" aria-hidden="true">
+    <!-- 🎬 VIDÉO OPTIONNELLE : déposer assets/videos/hero.mp4 (burger, fromage qui coule…, 10-15 s, sans son, < 4 Mo, 1080p).
+         Si le fichier existe, il remplace automatiquement la photo ci-dessous. -->
+    <video class="hero-video" id="heroVideo" muted loop playsinline preload="none" aria-hidden="true">
+      <source src="assets/videos/hero.mp4" type="video/mp4">
+    </video>
+    <!-- 🖼️ PHOTO HERO : assets/photos/classic.webp (à remplacer par votre plus belle photo, ~1800 px de large) -->
+    <figure class="hero-burger">
+      <img src="assets/photos/classic.webp" alt="Burger Classic, sauce généreuse qui coule sur le steak" width="984" height="759" fetchpriority="high">
+    </figure>
+    <div class="hero-shade"></div>
+  </div>
+  <canvas id="bokeh" aria-hidden="true"></canvas>
+
+  <div class="hero-inner">
+    <p class="eyebrow">Bienvenue chez</p>
+    <h1 class="hero-title"><span class="ln"><span>LA PAUSE</span></span><span class="ln"><span class="gold">D'ANGEL</span></span></h1>
+    <p class="rule hero-city"><span>Haucourt-Moulaine</span></p>
+    <p class="hero-sub">Découvrez notre carte</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="#burgers">Voir la carte</a>
+      <a class="btn btn-line" href="tel:+33788042546"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Appeler</a>
+      <a class="btn btn-line" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=15+Rue+Victor+Hugo,+54860+Haucourt-Moulaine,+France"><svg class="ico" aria-hidden="true"><use href="#i-route"/></svg>Itinéraire</a>
+    </div>
+    <span class="status-pill" data-open-status><i></i><em>…</em></span>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"><span>Défiler</span><i></i></div>
+</section>
+
+<!-- ============ 2. BANDEAU SLOGAN + ENGAGEMENT ============ -->
+<section class="band" id="esprit">
+  <div class="wrap band-grid">
+    <div class="band-text">
+      <p class="kicker rv">Bar à burgers · Haucourt-Moulaine</p>
+      <h2 class="slogan">
+        <span class="rv">Du généreux.</span>
+        <span class="rv gold">Du gourmand.</span>
+        <span class="rv">Du fait maison.</span>
+      </h2>
+      <div class="rule-line rv"></div>
+      <p class="engage rv">Tous nos produits sont locaux et notre bœuf provient du Luxembourg.</p>
+      <ul class="facts rv">
+        <li><svg class="ico" aria-hidden="true"><use href="#i-beef"/></svg><span>Bœuf du Luxembourg</span></li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span>Produits locaux</span></li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-onion"/></svg><span>Restaurant indépendant</span></li>
+      </ul>
+      <p class="mini rv">Sur place ou à emporter · Près de la RN52 et de son accès</p>
+    </div>
+    <figure class="band-photo rv">
+      <!-- 🖼️ assets/photos/burger-signature.webp -->
+      <img src="assets/photos/burger-signature.webp" alt="Burger au steak haché, fromage fondu, galette de pomme de terre et tomates séchées" width="1080" height="682" loading="lazy" data-zoom>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 3. NOS BURGERS ============ -->
+<section class="burgers" id="burgers" aria-labelledby="burgers-title">
+  <header class="sec-head wrap">
+    <p class="rule rv"><span id="burgers-kicker">La carte</span></p>
+    <h2 class="sec-title rv" id="burgers-title">NOS BURGERS</h2>
+    <p class="sec-sub rv" id="burgers-sub">Seul ou en menu avec frites fraîches ou légumes</p>
+  </header>
+  <div id="burgers-feature"><!-- rendu depuis data/menu.js --></div>
+
+  <div class="wrap" id="burgers-more-wrap" hidden>
+    <p class="rule rv"><span>Et aussi sur la carte</span></p>
+    <div class="cards" id="burgers-more"></div>
+  </div>
+
+  <div class="wrap">
+    <ul class="pills" id="burgers-notes"></ul>
+  </div>
+</section>
+
+<!-- ============ 4. LA CARTE (onglets) ============ -->
+<section class="carte" id="carte" aria-labelledby="carte-title">
+  <header class="sec-head wrap">
+    <p class="rule rv"><span>Prix &amp; allergènes</span></p>
+    <h2 class="sec-title rv" id="carte-title">LA CARTE</h2>
+  </header>
+  <div class="wrap">
+    <div class="tabs-wrap rv">
+      <div class="tabs" role="tablist" aria-label="Catégories de la carte" id="tabs">
+        <button role="tab" id="tab-burgers" aria-controls="panel-burgers" aria-selected="true" data-tab="burgers">Burgers</button>
+        <button role="tab" id="tab-enfant" aria-controls="panel-enfant" aria-selected="false" tabindex="-1" data-tab="enfant">Enfant</button>
+        <button role="tab" id="tab-accompagnements" aria-controls="panel-accompagnements" aria-selected="false" tabindex="-1" data-tab="accompagnements">Accompagnements</button>
+        <button role="tab" id="tab-boissons" aria-controls="panel-boissons" aria-selected="false" tabindex="-1" data-tab="boissons">Boissons</button>
+        <span class="tab-ind" id="tabInd" aria-hidden="true"></span>
+      </div>
+    </div>
+    <div class="panels" id="panels"><!-- rendu depuis data/menu.js --></div>
+
+    <div class="legal rv" id="legal"></div>
+  </div>
+</section>
+
+<!-- ============ 5. INFOS PRATIQUES ============ -->
+<section class="infos" id="infos" aria-labelledby="infos-title">
+  <header class="sec-head wrap">
+    <p class="rule rv"><span>Nous trouver</span></p>
+    <h2 class="sec-title rv" id="infos-title">INFOS PRATIQUES</h2>
+  </header>
+  <div class="wrap info-grid">
+    <div class="info-col rv">
+      <span class="status-pill status-big" data-open-status><i></i><em>…</em></span>
+
+      <h3 class="lbl">Adresse</h3>
+      <address>15 Rue Victor Hugo<br>54860 Haucourt-Moulaine<br>Lorraine, France</address>
+
+      <h3 class="lbl">Contact</h3>
+      <p><a class="biglink" href="tel:+33788042546">07 88 04 25 46</a></p>
+      <p><a class="biglink small" href="https://instagram.com/lapausedangel" target="_blank" rel="noopener">@lapausedangel</a></p>
+
+      <h3 class="lbl">Horaires</h3>
+      <table class="hours">
+        <caption class="sr">Horaires d'ouverture</caption>
+        <tbody>
+          <tr data-day="1"><th scope="row">Lundi</th><td>Fermé</td></tr>
+          <tr data-day="2"><th scope="row">Mardi</th><td>11h00–14h00 / 18h00–21h00</td></tr>
+          <tr data-day="3"><th scope="row">Mercredi</th><td>11h00–14h00 / 18h00–21h00</td></tr>
+          <tr data-day="4"><th scope="row">Jeudi</th><td>11h00–14h00 / 18h00–21h00</td></tr>
+          <tr data-day="5"><th scope="row">Vendredi</th><td>11h00–14h00 / 18h00–22h00</td></tr>
+          <tr data-day="6"><th scope="row">Samedi</th><td>11h00–14h00 / 18h00–22h00</td></tr>
+          <tr data-day="0"><th scope="row">Dimanche</th><td>11h00–14h00 / 18h00–22h00</td></tr>
+        </tbody>
+      </table>
+      <p class="mini">En cas de changement exceptionnel, consultez Instagram.</p>
+    </div>
+
+    <div class="info-col rv">
+      <div class="map">
+        <iframe title="Carte Google Maps — La Pause d'Angel, 15 Rue Victor Hugo, Haucourt-Moulaine"
+          src="https://www.google.com/maps?q=15+Rue+Victor+Hugo,+54860+Haucourt-Moulaine,+France&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+      <div class="route-box">
+        <p class="kicker">Une pause sur votre route</p>
+        <p>Près de la RN52 et de son accès : idéal pour une pause déjeuner ou un repas à emporter sur la route.</p>
+        <div class="cta-row">
+          <a class="btn btn-gold" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=15+Rue+Victor+Hugo,+54860+Haucourt-Moulaine,+France"><svg class="ico" aria-hidden="true"><use href="#i-route"/></svg>Itinéraire</a>
+          <a class="btn btn-line" href="tel:+33788042546"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Appeler</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="script rv" aria-label="À très vite">À très vite</p>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <img src="assets/logo.png" alt="Logo La Pause d'Angel" width="72" height="72" loading="lazy">
+      <div><b>LA PAUSE D'ANGEL</b><small>BAR À BURGERS</small></div>
+    </div>
+    <div class="foot-col">
+      <p>15 Rue Victor Hugo<br>54860 Haucourt-Moulaine</p>
+      <p><a href="tel:+33788042546">07 88 04 25 46</a></p>
+      <p><a href="https://instagram.com/lapausedangel" target="_blank" rel="noopener">@lapausedangel</a></p>
+    </div>
+    <p class="copy">© <span id="year">2026</span> La Pause d'Angel — Tous droits réservés</p>
+  </div>
+</footer>
+
+<!-- Barre collante mobile -->
+<div class="sticky-cta">
+  <a class="btn btn-gold" href="tel:+33788042546"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Appeler</a>
+  <a class="btn btn-line" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=15+Rue+Victor+Hugo,+54860+Haucourt-Moulaine,+France"><svg class="ico" aria-hidden="true"><use href="#i-route"/></svg>Itinéraire</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="data/menu.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
